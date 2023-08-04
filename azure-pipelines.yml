@@ -1,0 +1,36 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+  displayName: 'Install Terraform 0.12.3'
+  inputs:
+    terraformVersion: 0.12.3
+
+- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
+  displayName: 'Terraform : azurerm'
+  inputs:
+    workingDirectory: configuration
+    backendServiceArm: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
+    backendAzureRmResourceGroupName: 'rg_devops'
+    backendAzureRmStorageAccountName: sademoraycarneiro
+    backendAzureRmContainerName: containerterraform
+    backendAzureRmKey: terraform.tfstate
+
+- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
+  displayName: 'Terraform : azurerm'
+  inputs:
+    command: plan
+    workingDirectory: configuration
+    environmentServiceNameAzureRM: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
+
+- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
+  displayName: 'Terraform : azurerm'
+  inputs:
+    command: apply
+    workingDirectory: configuration
+    commandOptions: '-auto-approve '
+    environmentServiceNameAzureRM: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
