@@ -1,5 +1,5 @@
 ##Variaveis
-$AMBIENTE="piloto"
+$AMBIENTE="devsquad"
 
 #SPOKE
 $SUBSCRIPTION="Arquitetura de Referencia de TI"
