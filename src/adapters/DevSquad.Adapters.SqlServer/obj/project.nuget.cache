@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X8nBH9lDLnLg88fAHOIE5pn6YtEd3su6CUS0xqCIqnfzba2dAom5JqQ8aWtfPI4TkHyle+KFlJpQY5FIWFVVwA==",
+  "success": true,
+  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.SqlServer\\DevSquad.Adapters.SqlServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

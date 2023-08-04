@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bF8OW+lKz5XjgVMS5ExzQ/9vvTHbw7eBQcSMZxYSGbV2W/PyEK0V1o9uiQaG2ZJpW3tO8WrX+saOAPo+o3CWAQ==",
+  "success": true,
+  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

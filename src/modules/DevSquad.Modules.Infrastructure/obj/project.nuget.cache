@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vg2lPdAiz/E6IUXsG7zmAuT4kDisx+J+PTYT/afjD2T9eulJBFUHDAh0CamoJvV26D+CVA8vcqGHNcc2mQBlqA==",
+  "success": true,
+  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Infrastructure\\DevSquad.Modules.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
+    "C:\\Users\\rayca\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
