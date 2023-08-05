@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-devsquad-demo"
+  name     = "rg_devsquad"
   location = "brazilsouth"
   tags     = var.tags
 }
@@ -22,13 +22,13 @@ resource "azurerm_subnet" "akssubnet" {
 }
 
 //storage
-module "storage" {
-  source               = "./modules/storage"
-  storage_account_name = "devsquadstorage"
-  resource_group_name  = azurerm_resource_group.rg.name
-  location             = "brazilsouth"
-  depends_on           = [azurerm_resource_group.rg]
-}
+//module "storage" {
+//  source               = "./modules/storage"
+//  storage_account_name = "devsquadstorage"
+//  resource_group_name  = azurerm_resource_group.rg.name
+//  location             = "brazilsouth"
+//  depends_on           = [azurerm_resource_group.rg]
+//}
 
 //acr
 module "acr" {
