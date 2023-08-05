@@ -14,7 +14,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: 'configuration'
+    workingDirectory: 'src/iac'
     backendServiceArm: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
     backendAzureRmResourceGroupName: 'rg_devsquad'
     backendAzureRmStorageAccountName: 'storageterraformdevsquad'
@@ -32,6 +32,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'apply'
-    workingDirectory: 'configuration'
+    workingDirectory: 'src/iac'
     commandOptions: '-auto-approve'
     environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
