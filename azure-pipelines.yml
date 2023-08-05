@@ -1,37 +1,36 @@
 trigger:
-  - main
-  
-  pool:
-    vmImage: ubuntu-latest
-  
-  steps:
-  - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
-    displayName: 'Install Terraform 0.12.3'
-    inputs:
-      terraformVersion: 0.12.3
-  
-  - task: TerraformTaskV2@2
-    inputs:
-      provider: 'azurerm'
-      command: 'init'
-      workingDirectory: 'src/iac'
-      backendServiceArm: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
-      backendAzureRmResourceGroupName: 'rg_devsquad'
-      backendAzureRmStorageAccountName: 'storageterraformdevsquad'
-      backendAzureRmContainerName: 'containerterraformdevsquad'
-      backendAzureRmKey: 'terraform.tfstate'
-  
-  - task: TerraformTaskV2@2
-    inputs:
-      provider: 'azurerm'
-      command: 'plan'
-      workingDirectory: 'src/iac'
-      environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
-  
-  - task: TerraformTaskV2@2
-    inputs:
-      provider: 'azurerm'
-      command: 'apply'
-      workingDirectory: 'src/iac'
-      commandOptions: '-auto-approve'
-      environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
+  - none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: TerraformInstaller@0
+  inputs:
+    terraformVersion: 'latest'
+
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: 'src/iac'
+    backendServiceArm: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
+    backendAzureRmResourceGroupName: 'rg_devsquad'
+    backendAzureRmStorageAccountName: 'storageterraformdevsquad'
+    backendAzureRmContainerName: 'containerterraformdevsquad'
+    backendAzureRmKey: 'terraform.tfstate'
+
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    workingDirectory: 'src/iac'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
+
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: 'src/iac'
+    commandOptions: '-auto-approve'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
