@@ -16,8 +16,8 @@ steps:
     workingDirectory: configuration
     backendServiceArm: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
     backendAzureRmResourceGroupName: 'rg_devops'
-    backendAzureRmStorageAccountName: sademoraycarneiro
-    backendAzureRmContainerName: containerterraform
+    backendAzureRmStorageAccountName: devsquadstorage
+    backendAzureRmContainerName: devsquadstoragecontainer
     backendAzureRmKey: terraform.tfstate
 
 - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2

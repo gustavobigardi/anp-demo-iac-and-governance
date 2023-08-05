@@ -21,6 +21,15 @@ resource "azurerm_subnet" "akssubnet" {
   depends_on          = [azurerm_resource_group.rg]
 }
 
+//storage
+module "storage" {
+  source               = "./modules/storage"
+  storage_account_name = "devsquadstorage"
+  resource_group_name  = azurerm_resource_group.rg.name
+  location             = "brazilsouth"
+  depends_on           = [azurerm_resource_group.rg]
+}
+
 //acr
 module "acr" {
   source              = "./modules/acr"
