@@ -10,27 +10,28 @@ steps:
   inputs:
     terraformVersion: 0.12.3
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
-  displayName: 'Terraform : azurerm'
+- task: TerraformTaskV2@2
   inputs:
-    workingDirectory: configuration
-    backendServiceArm: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
-    backendAzureRmResourceGroupName: 'rg_devops'
-    backendAzureRmStorageAccountName: sademoraycarneiro
-    backendAzureRmContainerName: containerterraform
-    backendAzureRmKey: terraform.tfstate
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: 'configuration'
+    backendServiceArm: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
+    backendAzureRmResourceGroupName: 'rg_devsquad'
+    backendAzureRmStorageAccountName: 'storageterraformdevsquad'
+    backendAzureRmContainerName: 'containerterraformdevsquad'
+    backendAzureRmKey: 'terraform.tfstate'
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
-  displayName: 'Terraform : azurerm'
+- task: TerraformTaskV2@2
   inputs:
-    command: plan
-    workingDirectory: configuration
-    environmentServiceNameAzureRM: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
+    provider: 'azurerm'
+    command: 'plan'
+    workingDirectory: 'src/iac'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV2@2
-  displayName: 'Terraform : azurerm'
+- task: TerraformTaskV2@2
   inputs:
-    command: apply
-    workingDirectory: configuration
-    commandOptions: '-auto-approve '
-    environmentServiceNameAzureRM: 'Visual Studio Enterprise Subscription (7e315258-a330-417a-af09-7a08726008aa)'
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: 'configuration'
+    commandOptions: '-auto-approve'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
