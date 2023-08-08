@@ -9,7 +9,7 @@ steps:
   inputs:
     terraformVersion: 'latest'
 
-- task: TerraformTaskV2@2
+- task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
     command: 'init'
@@ -21,14 +21,14 @@ steps:
     backendAzureRmContainerName: 'containerterraformdevsquad'
     backendAzureRmKey: 'terraform.tfstate'
 
-- task: TerraformTaskV2@2
+- task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
     command: 'plan'
     workingDirectory: 'src/iac'
     environmentServiceNameAzureRM: 'azureconn'
 
-- task: TerraformTaskV2@2
+- task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
     command: 'apply'
