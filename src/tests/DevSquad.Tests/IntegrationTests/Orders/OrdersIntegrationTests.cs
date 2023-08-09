@@ -7,8 +7,9 @@ namespace DevSquad.Tests.IntegrationTests.Orders
 {
     public class OrdersIntegrationTests : Notifiable
     {
+
         [Test]
-        public void OrderTests_PlaceOrder_ReturnOrderNumber()
+        public async Task OrderTests_PlaceOrder_ReturnOrderNumberAsync()
         {
             PlaceOrderUseCase _placeOrder = new(
                 new FakeOrderWriteRepository()
@@ -29,7 +30,8 @@ namespace DevSquad.Tests.IntegrationTests.Orders
                 }
             };
 
-            string order = _placeOrder.Execute(input);
+
+            await _placeOrder.Execute(input);
 
             AddNotifications(_placeOrder.Notifications);
 

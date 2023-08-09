@@ -1,7 +1,4 @@
 ﻿using Flunt.Notifications;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Valhalla.Modules.Domain.Enums;
 
 namespace DevSquad.Modules.Domain.Enums
@@ -36,7 +33,7 @@ namespace DevSquad.Modules.Domain.Enums
             {
                 AddNotification("OrderItem", $"Product {product.Title} does not have {quantity} in stock!");
             }
-            
+
             product.WidthdrawStockQuantity(quantity);
             var item = new OrderItem(product, quantity);
             _itens.Add(item);

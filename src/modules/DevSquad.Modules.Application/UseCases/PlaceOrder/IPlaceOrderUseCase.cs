@@ -4,6 +4,7 @@ namespace DevSquad.Modules.Application.UseCases.PlaceOrder
 {
     public interface IPlaceOrderUseCase
     {
-        string Execute(PlaceOrderInput orderInput);
+        Task<string> Execute(PlaceOrderInput orderInput);
+        Task<string> GetOrderByIdAsync(Guid id);
     }
 }

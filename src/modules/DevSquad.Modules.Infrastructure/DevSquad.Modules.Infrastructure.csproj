@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\adapters\DevSquad.Adapters.Caching\DevSquad.Adapters.Caching.csproj" />
     <ProjectReference Include="..\..\adapters\DevSquad.Adapters.SqlServer\DevSquad.Adapters.SqlServer.csproj" />
     <ProjectReference Include="..\DevSquad.Modules.Application\DevSquad.Modules.Application.csproj" />
   </ItemGroup>

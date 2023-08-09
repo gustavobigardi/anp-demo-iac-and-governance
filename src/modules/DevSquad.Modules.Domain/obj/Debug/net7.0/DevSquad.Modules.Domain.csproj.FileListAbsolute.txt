@@ -10,3 +10,15 @@ C:\repos\devsquad\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.
 C:\repos\devsquad\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\refint\DevSquad.Modules.Domain.dll
 C:\repos\devsquad\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.pdb
 C:\repos\devsquad\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\ref\DevSquad.Modules.Domain.dll
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\bin\Debug\net7.0\DevSquad.Modules.Domain.deps.json
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\bin\Debug\net7.0\DevSquad.Modules.Domain.dll
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\bin\Debug\net7.0\DevSquad.Modules.Domain.pdb
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.csproj.AssemblyReference.cache
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.AssemblyInfoInputs.cache
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.AssemblyInfo.cs
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.csproj.CoreCompileInputs.cache
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.dll
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\refint\DevSquad.Modules.Domain.dll
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\DevSquad.Modules.Domain.pdb
+C:\repos\devsquad-demo\src\modules\DevSquad.Modules.Domain\obj\Debug\net7.0\ref\DevSquad.Modules.Domain.dll

@@ -1,4 +1,5 @@
-﻿using DevSquad.Modules.Application.Abstractions.Commands;
+﻿using DevSquad.Modules.Application.Abstractions.Cache;
+using DevSquad.Modules.Application.Abstractions.Commands;
 using DevSquad.Modules.Application.Inputs;
 using DevSquad.Modules.Domain.Enums;
 using DevSquad.Modules.Domain.ValueObjects;
@@ -10,6 +11,7 @@ namespace DevSquad.Modules.Application.UseCases.PlaceOrder
     {
 
         private readonly IOrderWriteRepository _orderWriteOnlyRepository;
+        private readonly ICachingService _cache;
 
         private Customer? _customer;
         private Order? _order;
@@ -19,7 +21,15 @@ namespace DevSquad.Modules.Application.UseCases.PlaceOrder
             _orderWriteOnlyRepository = orderWriteOnlyRepository;
         }
 
-        public string Execute(PlaceOrderInput order)
+        public PlaceOrderUseCase(
+            IOrderWriteRepository orderWriteOnlyRepository,
+            ICachingService cache)
+        {
+            _orderWriteOnlyRepository = orderWriteOnlyRepository;
+            _cache = cache;
+        }
+
+        public async Task<string> Execute(PlaceOrderInput order)
         {
             var name = new NameVo("Ray", "Carneiro");
             var cpf = new CpfVo("15366015006");
@@ -61,7 +71,7 @@ namespace DevSquad.Modules.Application.UseCases.PlaceOrder
 
             try
             {
-                orderId = 
+                orderId =
                     _orderWriteOnlyRepository
                     .PlaceOrder(_customer, _order);
             }
@@ -70,7 +80,24 @@ namespace DevSquad.Modules.Application.UseCases.PlaceOrder
                 throw new Exception($"Error executing PlaceOrderUseCase: Execute()");
             }
 
-            return "Número do pedido: " + orderId;
+            return await Task.FromResult("Número do pedido: " + orderId);
+        }
+
+        public async Task<string> GetOrderByIdAsync(Guid id)
+        {
+            var cacheData = await _cache.GetAsync(id.ToString());
+
+            if (!string.IsNullOrEmpty(cacheData))
+            {
+                //Would need to convert to JSON, but since this is a demo, I'll go with string
+                string? data = cacheData;
+                return await Task.FromResult("Número do pedido: " + data);
+            }
+
+            //if data not in cache, should call Database, but here for the sake of demo
+            //I'll return a string as a sample
+
+            return await Task.FromResult("Número do pedido: " + id);
         }
     }
 }
