@@ -5,13 +5,13 @@ resource "azurerm_resource_group" "rg" {
 }
 
 //VNET e Subnets
-//resource "azurerm_virtual_network" "vnet" {
-//  name                = "vnet-piloto"
-//  resource_group_name = azurerm_resource_group.rg.name
-//  location            = azurerm_resource_group.rg.location
-//  address_space       = ["10.21.0.0/16"]
-//  depends_on          = [azurerm_resource_group.rg]
-//}
+resource "azurerm_virtual_network" "vnet" {
+  name                = "vnet-piloto"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  address_space       = ["10.21.0.0/16"]
+  depends_on          = [azurerm_resource_group.rg]
+}
 
 resource "azurerm_subnet" "akssubnet" {
   name                 = "subnet-aks"

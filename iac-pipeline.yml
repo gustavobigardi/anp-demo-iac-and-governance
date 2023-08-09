@@ -14,8 +14,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: 'src/iac'
-    #backendServiceArm: 'MSDN Platforms Subscription(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
-    backendServiceArm: 'azureconn'
+    backendServiceArm: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
     backendAzureRmResourceGroupName: 'rg_devsquad'
     backendAzureRmStorageAccountName: 'storageterraformdevsquad'
     backendAzureRmContainerName: 'containerterraformdevsquad'
@@ -26,7 +25,7 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     workingDirectory: 'src/iac'
-    environmentServiceNameAzureRM: 'azureconn'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
 
 - task: TerraformTaskV4@4
   inputs:
@@ -34,4 +33,4 @@ steps:
     command: 'apply'
     workingDirectory: 'src/iac'
     commandOptions: '-auto-approve'
-    environmentServiceNameAzureRM: 'azureconn'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
