@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: devsquad-api
-        image: acrdevsquaddemo.azurecr.io/devsquad-api:latest
+        image: acrdevsquaddemo.azurecr.io/devsquad-demo:latest
         ports:
         - containerPort: 8081
 ---
