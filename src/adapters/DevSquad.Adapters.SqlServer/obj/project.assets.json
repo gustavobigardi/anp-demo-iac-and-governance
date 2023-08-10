@@ -74,11 +74,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.SqlServer\\DevSquad.Adapters.SqlServer.csproj",
+      "projectUniqueName": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.SqlServer\\DevSquad.Adapters.SqlServer.csproj",
       "projectName": "DevSquad.Adapters.SqlServer",
-      "projectPath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.SqlServer\\DevSquad.Adapters.SqlServer.csproj",
+      "projectPath": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.SqlServer\\DevSquad.Adapters.SqlServer.csproj",
       "packagesPath": "C:\\Users\\rayca\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.SqlServer\\obj\\",
+      "outputPath": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.SqlServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rayca\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,8 +95,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
-              "projectPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
+            "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
             }
           }
         }

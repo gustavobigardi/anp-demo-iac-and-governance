@@ -2078,6 +2078,7 @@
     "net7.0": [
       "DevSquad.Adapters.Caching >= 1.0.0",
       "DevSquad.Modules.Application >= 1.0.0",
+      "DevSquad.Modules.Domain >= 1.0.0",
       "Flunt >= 1.0.5",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
@@ -2092,11 +2093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\devsquad-demo\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
+      "projectUniqueName": "C:\\repos\\devsquad-architecture\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
       "projectName": "DevSquad.Tests",
-      "projectPath": "C:\\repos\\devsquad-demo\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
+      "projectPath": "C:\\repos\\devsquad-architecture\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
       "packagesPath": "C:\\Users\\rayca\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\devsquad-demo\\src\\tests\\DevSquad.Tests\\obj\\",
+      "outputPath": "C:\\repos\\devsquad-architecture\\src\\tests\\DevSquad.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rayca\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2113,11 +2114,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj": {
-              "projectPath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj"
+            "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj"
             },
-            "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
-              "projectPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
+            "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
+            },
+            "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj"
             }
           }
         }

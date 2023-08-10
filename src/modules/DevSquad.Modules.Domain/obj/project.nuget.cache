@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ZOYUeWRYTX5rPQm9ZkE1/8vBd1ZQyI3/M5dEjMyn1BGVmkBj1hyiY1puxckaRIV6cTgBPrFuQo6/+iuHryIWw==",
+  "dgSpecHash": "cZ5IxYSUjgXpQNkUt9VvCZjXQYTCr5cy8iaWPccGnw7tksj/FFbrcaJGbUhM11MnXE3wx1EB6YvHJahrqTGbXg==",
   "success": true,
-  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
+  "projectFilePath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
   ],

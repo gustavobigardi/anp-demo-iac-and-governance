@@ -38,11 +38,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
+      "projectUniqueName": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
       "projectName": "DevSquad.Modules.Domain",
-      "projectPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
+      "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\DevSquad.Modules.Domain.csproj",
       "packagesPath": "C:\\Users\\rayca\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Domain\\obj\\",
+      "outputPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rayca\\AppData\\Roaming\\NuGet\\NuGet.Config",

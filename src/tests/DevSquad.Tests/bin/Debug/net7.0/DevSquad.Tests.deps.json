@@ -10,6 +10,7 @@
         "dependencies": {
           "DevSquad.Adapters.Caching": "1.0.0",
           "DevSquad.Modules.Application": "1.0.0",
+          "DevSquad.Modules.Domain": "1.0.0",
           "Flunt": "1.0.5",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",

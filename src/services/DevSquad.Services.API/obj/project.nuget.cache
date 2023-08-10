@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ae+omFnauZUp5krm59kwoyHhr+zbLYA4yAP9AvBaC0/Cg7vtZR6gIkdRfABr3ZDqX3Ht0DyVjatAXbOiQG8j3g==",
+  "dgSpecHash": "p3rUYV5LUNMvkb4g51jw9oxG54BtFN/CLSmE9JX1OVi6WliOlZvh8gq7C+JN9YujAkyGJROawpLlhPI6tyjHgw==",
   "success": true,
-  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
+  "projectFilePath": "C:\\repos\\devsquad-architecture\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayca\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",

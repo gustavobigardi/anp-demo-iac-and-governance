@@ -10,8 +10,7 @@
         "dependencies": {
           "DevSquad.Adapters.Caching": "1.0.0",
           "DevSquad.Adapters.SqlServer": "1.0.0",
-          "DevSquad.Modules.Application": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "DevSquad.Modules.Application": "1.0.0"
         },
         "runtime": {
           "DevSquad.Modules.Infrastructure.dll": {}

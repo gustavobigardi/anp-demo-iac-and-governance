@@ -1587,8 +1587,7 @@
         "dependencies": {
           "DevSquad.Adapters.Caching": "1.0.0",
           "DevSquad.Adapters.SqlServer": "1.0.0",
-          "DevSquad.Modules.Application": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "DevSquad.Modules.Application": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DevSquad.Modules.Infrastructure.dll": {}
@@ -5055,11 +5054,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\devsquad-demo\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
+      "projectUniqueName": "C:\\repos\\devsquad-architecture\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
       "projectName": "DevSquad.Services.API",
-      "projectPath": "C:\\repos\\devsquad-demo\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
+      "projectPath": "C:\\repos\\devsquad-architecture\\src\\services\\DevSquad.Services.API\\DevSquad.Services.API.csproj",
       "packagesPath": "C:\\Users\\rayca\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\devsquad-demo\\src\\services\\DevSquad.Services.API\\obj\\",
+      "outputPath": "C:\\repos\\devsquad-architecture\\src\\services\\DevSquad.Services.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rayca\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5077,11 +5076,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
-              "projectPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
+            "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Application\\DevSquad.Modules.Application.csproj"
             },
-            "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Infrastructure\\DevSquad.Modules.Infrastructure.csproj": {
-              "projectPath": "C:\\repos\\devsquad-demo\\src\\modules\\DevSquad.Modules.Infrastructure\\DevSquad.Modules.Infrastructure.csproj"
+            "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Infrastructure\\DevSquad.Modules.Infrastructure.csproj": {
+              "projectPath": "C:\\repos\\devsquad-architecture\\src\\modules\\DevSquad.Modules.Infrastructure\\DevSquad.Modules.Infrastructure.csproj"
             }
           }
         }

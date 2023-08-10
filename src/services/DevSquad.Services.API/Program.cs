@@ -1,4 +1,5 @@
 using DevSquad.Modules.Infrastructure.IoC;
+using Marraia.Notifications.Configurations;
 using Microsoft.OpenApi.Models;
 
 internal class Program
@@ -36,6 +37,14 @@ internal class Program
                 .AllowAnyMethod()
                 .AllowAnyHeader());
         });
+
+        builder.Services.AddStackExchangeRedisCache(c =>
+        {
+            c.InstanceName = "instance";
+            c.Configuration = "localhost:6379";
+        });
+
+        builder.Services.AddSmartNotification();
 
         RegisterServices(builder.Services);
 

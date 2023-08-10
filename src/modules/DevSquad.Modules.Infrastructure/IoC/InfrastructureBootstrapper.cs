@@ -1,5 +1,5 @@
 ﻿using DevSquad.Adapters.Caching;
-using DevSquad.Adapters.SqlServer.Order;
+using DevSquad.Adapters.MongoDb.Order;
 using DevSquad.Modules.Application.Abstractions.Cache;
 using DevSquad.Modules.Application.Abstractions.Commands;
 using Microsoft.Extensions.DependencyInjection;

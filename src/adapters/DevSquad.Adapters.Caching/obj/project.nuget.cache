@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PZ7ValY9J4R1+dmHPwUhOh9/zXzttvWcKDEM5FDljyz0E+hnQzcl95dXF8b+hhOSDYLQhiFgy6uZjlrAuEQZzw==",
+  "dgSpecHash": "BbWCEOOy4UDS0ivR20I/10veYcdQuhwpoG5wpXc0TY8v6r5xScU92p4KdE1zLpYeKbTx1GyBDULGcHY5MPJhhg==",
   "success": true,
-  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj",
+  "projectFilePath": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.Caching\\DevSquad.Adapters.Caching.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\rayca\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

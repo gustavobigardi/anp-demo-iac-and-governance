@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8qzeaIpiRPH9oOrKuUnjDAYv9j9TXrK/O2G/gEn8XtCxGLvmhHw0PittPo4FKJB1f05OJPkI8IX54k+p5S5Aqw==",
+  "dgSpecHash": "96MvIGVcpUgzldbPnt56DPeaTBhLkew3YjMtvej99N9AwAyDVcVE0HmrV/fPK2ZwQDQm82/Px8PehoG/4NuW/w==",
   "success": true,
-  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\adapters\\DevSquad.Adapters.MongoDb\\DevSquad.Adapters.MongoDb.csproj",
+  "projectFilePath": "C:\\repos\\devsquad-architecture\\src\\adapters\\DevSquad.Adapters.MongoDb\\DevSquad.Adapters.MongoDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
   ],

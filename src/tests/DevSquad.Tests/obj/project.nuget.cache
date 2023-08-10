@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2YevClO79LeZMSp7irx92oemmEgAQmrCib2mT8UOED6cZbdtt2mAJUhDmLC9m9IX5GlekU2k84a7jn/zROomLw==",
+  "dgSpecHash": "Dm0YG/7VKpzExBnobGxoYVE0r+2yG7JdjclLSiv+jnu8rt0yAo+yXpTxpa8icYqaOjSBs1tGqF+bm0mjef5kpQ==",
   "success": true,
-  "projectFilePath": "C:\\repos\\devsquad-demo\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
+  "projectFilePath": "C:\\repos\\devsquad-architecture\\src\\tests\\DevSquad.Tests\\DevSquad.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayca\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\rayca\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",

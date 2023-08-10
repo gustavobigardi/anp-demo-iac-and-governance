@@ -3,7 +3,6 @@ using DevSquad.Modules.Application.UseCases.PlaceOrder;
 using Marraia.Notifications.Base;
 using Marraia.Notifications.Models;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -24,7 +23,6 @@ namespace DevSquad.Services.API.Controllers
         }
 
         [HttpPost]
-        [Authorize("Orders")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
@@ -39,12 +37,10 @@ namespace DevSquad.Services.API.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize("Orders")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.Forbidden)]
         [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
-        //[ProducesResponseType(typeof(TaxIntegration), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetByIdAsync([FromRoute] Guid id)
         {
             var result = await _orders

@@ -19,7 +19,7 @@ namespace DevSquad.Tests.Entities
         {
             var name = new NameVo("Ray", "Carneiro");
             var cpf = new CpfVo("15366015006");
-            var email = new EmailVo("contato@academiadotnet.com.br");
+            var email = new EmailVo("someone@microsoft.com");
 
             _teclado = new Product("Teclado Microsoft", "Melhor teclado", "teclado.jpg", 10M, 10);
             _mouse = new Product("Mouse Microsoft", "Melhor mouse", "mouse.jpg", 5M, 10);

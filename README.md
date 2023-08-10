@@ -1,20 +1,25 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This repository is a demo for the DevSquad team interview. The requirement was to create a Web service using C# to consult repositories (with different technologies) to allow the test and deployment in a Cloud env.
+
+# Sample High Level Architecture
+In this demonstration, I've opted for the hexagonal architecture, also known as the ports and adapters architecture. This architectural pattern finds application in software design. 
+
+Its objective is to establish loosely interconnected components within an application, allowing seamless linkage to the software ecosystem through ports and adapters. This approach enables the interchangeability of components across various levels and simplifies the implementation of automated testing.
+
+Below you can find an idea of the architecture approach:
+
+![alt text](hexagonal-architecture.png)
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+
+In order to run this project you will need to install:
+
+1.	Visual Studio 2022 (Community version can be used as well) (https://visualstudio.microsoft.com/downloads/)
+2.	.NET 7 Run time and SDK (https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+3.	Docker - not mandatory (https://www.docker.com/)
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+To build and test, restore all references and run the "DevSquad.Services.API" project under "Services" folder.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# Test
+To test, take advantage of the "DevSquad.Tests" project which runs using nUnit and you'll find some sample entities, fakes and integration tests.

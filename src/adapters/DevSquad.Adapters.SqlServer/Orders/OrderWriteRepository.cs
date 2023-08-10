@@ -1,13 +1,13 @@
 ﻿using DevSquad.Modules.Application.Abstractions.Commands;
 using DevSquad.Modules.Domain.Enums;
 
-namespace DevSquad.Adapters.SqlServer.Order
+namespace DevSquad.Adapters.MongoDb.Order
 {
     public class OrderWriteRepository : IOrderWriteRepository
     {
         public string PlaceOrder(Customer customer, Modules.Domain.Enums.Order order)
         {
-            //to-do: configure connection with SQL Server
+            //to-do: configure connection with MongoDb
 
             const string characters = "0123456789" +
                                                   "abcdefghijklmnopqrstuvwxyz" +
