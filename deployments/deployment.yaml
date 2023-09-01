@@ -1,9 +1,10 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cloud-morning-api
   labels:
     app: cloud-morning-api
+  name: cloud-morning-api
 spec:
   replicas: 3
   selector:
@@ -15,8 +16,8 @@ spec:
         app: cloud-morning-api
     spec:
       containers:
-      - name: cloud-morning-api
-        image: acrcloudmorningdemo.azurecr.io/anp-demo-iac-governance:latest
+      - image: acrcloudmorningdemo.azurecr.io/anp-demo-iac-governance:latest
+        name: cloud-morning-api
         ports:
         - containerPort: 8081
 ---
@@ -25,9 +26,8 @@ kind: Service
 metadata:
   name: cloud-morning-api
 spec:
+  ports:
+  - port: 8081
   selector:
     app: cloud-morning-api
-  ports:
-    - port: 8081
-      targetPort: 8081
   type: LoadBalancer
