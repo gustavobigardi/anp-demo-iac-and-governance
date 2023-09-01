@@ -29,5 +29,4 @@ resource "azurerm_kubernetes_cluster" "aks" {
     type         = "UserAssigned"
     #identity_ids = [azurerm_user_assigned_identity.aks_identity.id] usado em caso de UserAssigned
   }
-
 }
