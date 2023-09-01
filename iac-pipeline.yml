@@ -14,10 +14,10 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: 'src/iac'
-    backendServiceArm: 'cloud-morning-demo'
-    backendAzureRmResourceGroupName: 'rg-cloud-morning-demo'
-    backendAzureRmStorageAccountName: 'terraformcloudmorning'
-    backendAzureRmContainerName: 'containerterraformcloudmorning'
+    backendServiceArm: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
+    backendAzureRmResourceGroupName: 'rg_devsquad'
+    backendAzureRmStorageAccountName: 'storageterraformdevsquad'
+    backendAzureRmContainerName: 'containerterraformdevsquad'
     backendAzureRmKey: 'terraform.tfstate'
 
 - task: TerraformTaskV4@4
@@ -25,7 +25,7 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     workingDirectory: 'src/iac'
-    environmentServiceNameAzureRM: 'cloud-morning-demo'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
 
 - task: TerraformTaskV4@4
   inputs:
@@ -33,4 +33,4 @@ steps:
     command: 'apply'
     workingDirectory: 'src/iac'
     commandOptions: '-auto-approve'
-    environmentServiceNameAzureRM: 'cloud-morning-demo'
+    environmentServiceNameAzureRM: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
