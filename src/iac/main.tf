@@ -33,7 +33,7 @@ resource "azurerm_subnet" "akssubnet" {
 //acr
 module "acr" {
   source              = "./modules/acr"
-  name                = "acrcloud-morningdemo"
+  name                = "acrcloudmorningdemo"
   resource_group_name = azurerm_resource_group.rg.name
   location            = "brazilsouth"
   sku_name            = "Basic"
