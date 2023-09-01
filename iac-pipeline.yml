@@ -15,9 +15,9 @@ steps:
     command: 'init'
     workingDirectory: 'src/iac'
     backendServiceArm: 'cloud-morning-demo'
-    backendAzureRmResourceGroupName: 'rg_devsquad'
-    backendAzureRmStorageAccountName: 'storageterraformdevsquad'
-    backendAzureRmContainerName: 'containerterraformdevsquad'
+    backendAzureRmResourceGroupName: 'rg-cloud-morning-demo'
+    backendAzureRmStorageAccountName: 'terraformcloudmorning'
+    backendAzureRmContainerName: 'containerterraformcloudmorning'
     backendAzureRmKey: 'terraform.tfstate'
 
 - task: TerraformTaskV4@4

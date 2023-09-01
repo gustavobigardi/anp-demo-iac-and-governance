@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "rg_devsquad-deploy"
+  name     = "rg_cloud-morning-deploy"
   location = "brazilsouth"
   tags     = var.tags
 }
@@ -24,7 +24,7 @@ resource "azurerm_subnet" "akssubnet" {
 //storage
 //module "storage" {
 //  source               = "./modules/storage"
-//  storage_account_name = "devsquadstorage"
+//  storage_account_name = "cloud-morningstorage"
 //  resource_group_name  = azurerm_resource_group.rg.name
 //  location             = "brazilsouth"
 //  depends_on           = [azurerm_resource_group.rg]
@@ -33,7 +33,7 @@ resource "azurerm_subnet" "akssubnet" {
 //acr
 module "acr" {
   source              = "./modules/acr"
-  name                = "acrdevsquaddemo"
+  name                = "acrcloud-morningdemo"
   resource_group_name = azurerm_resource_group.rg.name
   location            = "brazilsouth"
   sku_name            = "Basic"
@@ -42,10 +42,10 @@ module "acr" {
 
 //exemplo teste aks
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "aks-devsquad-demo"
+  name                = "aks-cloud-morning-demo"
   location            = "brazilsouth"
   resource_group_name = azurerm_resource_group.rg.name
-  dns_prefix          = "aks-devsquad-demo"
+  dns_prefix          = "aks-cloud-morning-demo"
   depends_on               = [azurerm_resource_group.rg]
 
   default_node_pool {

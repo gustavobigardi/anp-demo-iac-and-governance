@@ -15,7 +15,6 @@ terraform {
 
 # Configure the Azure Provider
 provider "azurerm" {
-  subscription_id = "9d875e89-86f8-47d1-99b2-be3fea5d8523"
   features {
     resource_group {
       prevent_deletion_if_contains_resources = false
