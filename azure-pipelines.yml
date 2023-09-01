@@ -15,7 +15,7 @@ steps:
 - task: Docker@0
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'cloud-morning-acr'
+    azureSubscription: 'cloud-morning-demo'
     azureContainerRegistry: 'acrcloudmorningdemo.azurecr.io'
     action: 'Build an image'
     dockerFile: '**/Dockerfile'
