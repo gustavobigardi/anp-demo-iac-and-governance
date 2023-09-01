@@ -15,8 +15,8 @@ steps:
 - task: Docker@0
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'azureconn'
-    azureContainerRegistry: 'acrdevsquaddemo.azurecr.io'
+    azureSubscription: 'cloud-morning-acr'
+    azureContainerRegistry: 'acrcloudmorningdemo.azurecr.io'
     action: 'Build an image'
     dockerFile: '**/Dockerfile'
     imageName: '$(Build.Repository.Name):$(Build.BuildId)'
@@ -25,8 +25,8 @@ steps:
   displayName: 'Push a container image'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'MSDN Platforms Subscription(1)(9d875e89-86f8-47d1-99b2-be3fea5d8523)'
-    azureContainerRegistry: '{"loginServer":"acrdevsquaddemo.azurecr.io", "id" : "/subscriptions/9d875e89-86f8-47d1-99b2-be3fea5d8523/resourceGroups/rg_devsquad-deploy/providers/Microsoft.ContainerRegistry/registries/acrdevsquaddemo"}'
+    azureSubscription: 'cloud-morning-demo'
+    azureContainerRegistry: '{"loginServer":"acrcloudmorningdemo.azurecr.io", "id" : "/subscriptions/d97f0769-0b1e-489c-9217-f5276c2a0016/resourceGroups/rg_cloud-morning-deploy/providers/Microsoft.ContainerRegistry/registries/acrcloudmorningdemo"}'
     action: 'Push an image'
     imageName: '$(Build.Repository.Name):$(Build.BuildId)'
     includeLatestTag: true
